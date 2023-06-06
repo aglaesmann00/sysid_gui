@@ -1,10 +1,11 @@
+#%%
 import pandas as pd
 import numpy as np
 from datetime import datetime
 import seaborn as sns
 import matplotlib.pyplot as plt
 from scipy.stats import norm
-import statsmodels.api as sm
+import statsmodels as sm
 import copy
 
 from sklearn.model_selection import cross_validate
@@ -219,3 +220,4 @@ def common_text_tags(df, common_text):
         if common_text in column:
             tag_list.append(column)
     return tag_list
+# %%
